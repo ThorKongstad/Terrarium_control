@@ -21,7 +21,7 @@ def main(kasa_name, run_time):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('kasa_name')
-    parser.add_argument('run_time')
+    parser.add_argument('run_time', type=int)
     args = parser.parse_args()
 
     main(
